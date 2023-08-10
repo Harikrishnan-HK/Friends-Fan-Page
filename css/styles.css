@@ -1,0 +1,517 @@
+/* Name: Harikrishnan Karuppiah, Student Number: 8891138 */
+#container {
+    width: 1280px;
+    margin: 20px auto; 
+    border-radius: 5px;
+    border: 2px solid black;
+    background-color: white;
+    font-family: Helvetica;    
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+
+  }
+  header {
+    flex: 2 ;
+    background-color: white;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+    padding: 0px 20px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    line-height: 0.75;
+  }
+  header h1{
+margin: 0 310px 0 220px;  }
+  #logoImg {
+    width: 175px;
+    height: 150px;
+    position: static;
+    left: 115px;
+  }
+  #logoImg:hover {
+    cursor: pointer;
+  }
+  nav{
+    flex:1;
+    background-color: #FFC602; /* add colour to the nav background */
+    padding: 20px 0; /* add a 20 px top and bottom padding in the nav tag  */
+    text-align: center; /* make the text in the nav centered */
+    /* border-top: 2px solid black;
+    border-bottom: 2px solid black; */
+
+}
+
+nav a{
+    font-size: 20px; /* make the text bigger than default */
+    font-weight: bold; /* make the text bold */
+    color: black; /* change the colour of the text links */
+    text-decoration: none; /* remove the underline */
+    padding: 0 40px; /* push the links away from the other links */
+    font-family: Helvetica;    
+
+}
+
+nav a:hover {
+  color: #8f6ae3;
+text-decoration: underline;
+}
+
+nav ul{ /* applies these styles to all the child <ul> tags in <nav> */
+  list-style-type: none; /* remove the dots from the list */
+  padding: 0;
+  margin: 0;
+}
+
+nav>ul>li{ /* Only applies these styles to the immediate child <li> in the immediate child <ul> in <nav>. Basically it only affects the <li> in the main menu not the sub menu */
+  display: inline-block; /* to make the links in the main menu site side by side */
+  position: relative; /* to make the parent <li> as the container element of the absolutely positioned <ul> representing the sub menu */
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+width: 200px;
+position: absolute; /* put the sub menu in a separate layer */
+z-index: 999; /* make sure the sub menu is not hidden behind other elements */
+text-align: left;
+background-color: #d7cde8;
+  box-shadow: 0 0 5px #8f6ae3;
+}
+
+nav ul li ul li a{ /* styles for the <a> in the sub menu */
+  color: #8f6ae3;
+  padding: 10px;
+  display: block; /* to make sure the anchor tags occupy all the space available otherwise the hover colour changes do not have a good user experience. */
+}
+
+nav ul li ul li:hover a:hover{ /* styles for the <a> in the sub menu on mouse over */
+  color: white;
+  background-color: #8f6ae3;
+  text-decoration: none;
+}
+
+nav ul li ul { /* applies styles only to the sub menu */
+  display: none; /* hide the sub menu by default */
+}
+
+nav ul li:hover ul{/* applies styles only to the sub menu whose parent <li> is hovered */
+  display: block; /* show the sub menu when a user brings their mouse over the parent <li> */
+}
+  main {
+    flex:1;
+    display: flex;
+    flex-direction: column;
+  }
+  .hero {
+    flex: 3;
+    position: relative;
+  }
+  #heroImg{
+    width: 1280px;
+    height: 450px;
+    /* height: 400px; */
+  }
+  .hero h1{
+    padding: 15px;
+    font-weight: 1500;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: Helvetica;
+    /* background-color: #8f6ae3; */
+    color: #8f6ae3;
+    margin:30px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);  }
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: justify;
+    text-indent: 20px;
+
+  }
+  .hero p {
+    text-indent: 20px;
+    text-align: justify;
+    padding: 0 30px;
+  }
+  #nostalgicImg{
+    width: 1280px;
+    height: 350px;
+  }
+
+  .content1 {
+    flex: 4;
+  display: flex;
+  padding: 20px 30px;
+  }
+  .content1 div {
+    flex: 2;
+  }
+  .content1 h2,.content2 h2 {
+    text-align: center;
+    background-color: #8f6ae3;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: white;
+    padding: 10px;
+    font-size: larger;
+    margin: 0px 0px 30px 0px;
+  }
+  .content1 div img{
+    margin-left: 25%; 
+    margin-bottom: 0%; }
+  .content2 {
+    flex: 2;
+    display: flex;
+    padding: 20px 30px 0px 30px;
+  }
+  .content2 div {
+    flex: 1;
+
+  }
+  .content2 div img{
+    margin-left: 15%;  }
+
+  .picDesc {
+    padding: 50px 0px;
+  }
+    
+  .content3 {
+    flex: 5;
+    /* display: flex;
+    flex-direction: row; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+    font-family: Helvetica;    
+    font-size: 16px;
+    padding: 30px;
+  }
+
+  h2 {
+    text-align: center;
+    padding: 15px;
+    font-size: 25px;
+    background-color: #8f6ae3;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+    color: white;
+    margin: 0px 30px 10px 30px ;
+  }
+  .cards {
+    display: flex;
+    flex-flow: column;
+    border:  2px solid white ;
+    background-color:#DFCCFB ;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 5px black;
+    align-items: center;
+}
+.cards h3{
+  color: black;
+  margin: 10px 0px;
+  
+}
+.cards button {
+    margin-top: auto; 
+    background-color: #FFC602;
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Helvetica;    
+    font-weight: bold;
+    margin-bottom: 5px;
+    box-shadow: 0 0 5px black;
+
+}
+.cards ul {
+  margin-top: 0px;
+  padding-left: 20px;
+}
+.cards ul li{
+  line-height: 30px;
+  margin-top: 0px ;
+  padding:0px 10px;
+  list-style: none;
+}
+
+  .nostalgia1 {
+    flex: 4;
+  display: flex;
+  text-align: justify;
+  }
+  .nostalgia1 div {
+    flex: 2;
+    padding:50px 30px;
+    margin-left: 30px;
+
+  }
+
+  .nostalgia1 video {
+    margin-top: 50px;
+  }
+
+
+  .nostalgia2 {
+    flex: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; 
+  }
+
+  .nostalgia3 {
+    flex: 5;
+    /* display: flex;
+    flex-direction: row; */
+    margin: 50px;
+    
+  }
+
+  .nostalgia1 h2, .nostalgia2 h2, .nostalgia3 h2 {
+    text-align: center;
+    background-color: #8f6ae3;
+    color: white;
+    padding: 15px;
+    font-size: larger;
+    margin: 0px 0px 30px 0px;
+
+  }
+
+
+
+  #characImg {
+    width: 250px;
+    height: 300px;
+  }
+
+
+     footer {
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .footerMenu {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    background-color: #FFC602;
+    padding: 20px;
+    border-top: 2px solid black;
+
+  }
+  
+  .footerGrid {
+    color: black;
+    flex-basis: 30%;
+    text-align: center;
+  }
+  
+  .footerGrid h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .footerGrid ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footerGrid li {
+    margin-bottom: 5px;
+  }
+  
+  .footerGrid a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .footerGrid a:hover {
+    color: #007bff;
+  }
+  .footerCopyright{
+    flex: 1;
+    background-color: #FFC602;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    text-align: center;
+    border-top: 2px solid black;
+  }
+  #imgLeft{
+    width: 400px;
+    height: 550px;
+    /* clip-path: polygon(55% 2%, 58% 17%, 75% 0, 100% 23%, 100% 53%, 77% 66%, 67% 79%, 17% 86%, 0 81%, 0 0); */
+    clip-path: polygon(45% 2%, 42% 17%, 25% 0, 0 23%, 0 53%, 23% 66%, 33% 79%, 83% 86%, 100% 81%, 100% 0);
+  }
+
+  #imgRight{
+    width: 375px;
+    height: 375px;
+    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);   */
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);  } 
+
+
+table {
+  min-width:1100px;
+  min-height: 450px;
+  border-collapse: collapse;
+  text-align: center;
+  margin: 30px;
+
+}
+
+td,th, table {
+  border: 2px solid black;
+}
+
+th {
+  color: rgb(183, 72, 72);
+
+}
+tr:nth-child(2) th {
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+
+.season:nth-child(odd) {
+  background-color: rgb(215, 214, 214);
+}
+
+tr td:nth-last-child(1) {
+  background-color: rgb(226, 213, 213);
+}
+
+.herotext{
+  position: absolute; /* make .herotext content sit in a separate layer over the image */
+  top: 0; /* make the .herotext cover the entire area of .hero from top */
+  bottom: 4px; /* to bottom */
+  left: 0; /* and left */
+  right: 0; /* right, so that the entire image is overlayed */
+  background-color: rgba(219, 219, 220, 0.5) /* Equivalent to transparent */
+  ; /* add a semi transparent background */
+  padding: 20px; /* add some padding */
+  color: #fbeeef; /* change the text colour */
+  font-family: Helvetica;    
+  font-weight: bold; /* make the text bold */
+}
+.herotext h1{
+  color: black; 
+  text-align: center;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.shopbutton {
+background-color: #FFC602; /* add a background colour */
+color: black; /* change the text colour */
+display: inline-block; /* so that we can assign a width */
+width: 80px; /* set the width of the link */
+font-size: 16px; /* change the font size */
+border: 2px solid black; /* add a border */
+text-decoration: none; /* remove the underline */
+padding: 8px; /* add a top, right, bottom and left padding */
+}
+
+
+.form-container button {
+  margin: 10px 20px; 
+  background-color: #FFC602;
+  color: black;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: Helvetica;    
+  font-weight: bold;
+  cursor: pointer;
+}
+
+fieldset {
+  border: 2px solid #8f6ae3;
+  padding: 30px;
+  min-width: 900px;
+}
+.form-container fieldset legend{
+  color: rgb(183, 72, 72);
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+
+.field {
+  line-height: 30px;
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.detailsField input {
+  width: 25%;
+  height: 20px;
+  margin: 10px;
+
+}
+.field input {
+  width: 75%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 20px;
+}
+.field textarea {
+  width: 75%;
+  border-radius: 10px;
+  color: gray;
+}
+.radiofield input, .radiofield label, .checkfield input, .checkfield label {
+  padding: 5px;
+  margin: 0%;
+  max-width: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.checkfield, .radiofield {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.characContents {
+  display: flex;
+  flex-direction: column;
+
+}
+.characters{
+  display: flex;
+  flex-direction: row;
+  margin: 30px;
+}
+.characters div img {
+  width: 350px;
+  height: auto;
+}
+.characters div {
+  padding: 30px;
+}
+.characters h2 {
+  margin: 0px 0px 20px 0px;
+}
+
+.episodeContent h2  {
+  margin: 40px;
+}
+.episodeContent li {
+  line-height: 200%;
+  margin: 0px 70px;
+
+}
