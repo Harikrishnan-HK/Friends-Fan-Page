@@ -483,11 +483,12 @@ fieldset {
 .radiofield label,
 .checkfield input,
 .checkfield label {
-  padding: 5px;
+  padding: 0px;
   margin: 0%;
-  max-width: 50px;
+  max-width: 60px;
   display: flex;
   flex-direction: row;
+  line-height: 60px;
 }
 
 .checkfield,
