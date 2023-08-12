@@ -15,7 +15,7 @@ body {
 
 header {
   flex: 2;
-  background-color: white;
+  background-color: whitesmoke;
   font-family: 'Permanent Marker', cursive;
   color: black;
   padding: 0px 20px 0px 0px;
@@ -75,10 +75,10 @@ nav>ul>li {
 }
 
 nav ul li ul {
-  width: 200px;
+  width: 180px;
   position: absolute;
   z-index: 999;
-  text-align: left;
+  text-align: center;
   background-color: #d7cde8;
   box-shadow: 0 0 5px #8f6ae3;
 }
@@ -120,14 +120,14 @@ main {
 }
 
 .hero h1 {
-  padding: 15px;
+  padding: 15px 0px;
   font-weight: 1500;
   font-size: 28px;
   text-transform: uppercase;
   text-align: center;
   font-family: Helvetica;
   color: #8f6ae3;
-  margin: 30px;
+  margin: 30px 0px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
 }
 
@@ -141,7 +141,7 @@ p {
 .hero p {
   text-indent: 20px;
   text-align: justify;
-  padding: 0 30px;
+  padding: 0 30px;   /* ..*/
 }
 
 #nostalgicImg {
@@ -241,6 +241,7 @@ h2 {
   font-weight: bold;
   margin-bottom: 5px;
   box-shadow: 0 0 5px black;
+  cursor: pointer;
 }
 
 .cards ul {
@@ -394,7 +395,7 @@ tr:nth-child(2) th {
 }
 
 tr td:nth-last-child(1) {
-  background-color: rgb(226, 213, 213);
+  background-color: #DFCCFB;
 }
 
 .herotext {
@@ -410,7 +411,7 @@ tr td:nth-last-child(1) {
   font-weight: bold;
 }
 
-.herotext h1 {
+.herotext h1 { 
   color: black;
   text-align: center;
   margin-top: 30px;
@@ -542,4 +543,9 @@ fieldset {
   margin: 30px;
   margin-bottom: 0px;
   text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+.content3 :hover{
+    transform: scale(1.1); 
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
 }
